@@ -4,7 +4,8 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'package:jwt_decoder/jwt_decoder.dart';
 
 class ApiService {
-  final String baseUrl = 'http://192.168.1.3:5000/api';
+  final String baseUrl =
+      'https://primeraapp.onrender.com//api'; // Actualiza esta línea con la URL de tu API
 
   Future<String?> _getToken() async {
     final prefs = await SharedPreferences.getInstance();
